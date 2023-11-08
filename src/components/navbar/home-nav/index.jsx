@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from "@tanstack/react-router";
 import HomeIcon from "../../../assets/icons/home.svg";
 import UserIcon from "../../../assets/icons/user.svg";
@@ -7,6 +8,32 @@ import CommunityIcon from "../../../assets/icons/community.svg";
 import CogIcon from "../../../assets/icons/cog.svg";
 
 function NavBar() {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleLogout = () => {
+    localStorage.clear();
+    setIsLoggedIn(false);
+    setIsPopupVisible(true);
+  };
+
+  const Popup = ({ onClose }) => {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="bg-white p-8 rounded-md shadow-lg">
+          <p className="text-lg mb-4">Logged out successfully!</p>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={onClose}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    );
+  };
+  
+  
   return (
     <nav className="flex flex-col w-full p-5 text-xl text-gray-800 border-2 border-white bg-neutral-100 dark:text-white rounded-3xl dark:bg-gray-800 dark:border-gray-700 h-100 min-w-80">
       <ul className="space-y-6 ">
@@ -80,14 +107,23 @@ function NavBar() {
       <div className="pb-16"></div>
       <div className="pb-16"></div>
 
-      <button className="hidden w-full p-2 mt-auto leading-tight tracking-tight text-gray-900 bg-orange-200 border-2 border-orange-200 md:inline-block dark:bg-blue-500 dark:text-white dark:border-blue-500 dark:hover:border-blue-400 rounded-3xl hover:border-orange-100 shadow-custom">
-        <Link to="/Login">
-          Login
-        </Link>
-      </button>
-      <Link to="/Login" style={{ color: "gray-800" }}>
-        <span className="flex justify-center text-base text-gray-800 md:hidden dark:text-white">Login</span>
-      </Link>
+      {isLoggedIn ? (
+        <button className="w-full p-2 mt-auto leading-tight tracking-tight text-gray-900 bg-orange-200 border-2 border-orange-200 md:inline-block dark:bg-blue-500 dark:text-white dark:border-blue-500 dark:hover:border-blue-400 rounded-3xl hover:border-orange-100 shadow-custom" onClick={handleLogout}>
+          Logout
+        </button>
+      ) : (
+        <>
+          <Link to="/Login" style={{ color: "gray-800" }}>
+            <span className="flex justify-center text-base text-gray-800 md:hidden dark:text-white">Login</span>
+          </Link>
+          <button className="hidden w-full p-2 mt-auto leading-tight tracking-tight text-gray-900 bg-orange-200 border-2 border-orange-200 md:inline-block dark:bg-blue-500 dark:text-white dark:border-blue-500 dark:hover:border-blue-400 rounded-3xl hover:border-orange-100 shadow-custom">
+            <Link to="/Login">
+              Login
+            </Link>
+          </button>
+        </>
+      )}
+      {isPopupVisible && <Popup onClose={() => setIsPopupVisible(false)} />}
     </nav>
   );
 }
