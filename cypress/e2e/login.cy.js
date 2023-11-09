@@ -4,7 +4,7 @@ describe('Logs in', () => {
 
 
     cy.visit('localhost:5173');
-    cy.contains('.login-btn').click();
+    cy.get('.login-btn').click();
 
     //
     cy.get('input[placeholder="Username"]').type('newuser');
