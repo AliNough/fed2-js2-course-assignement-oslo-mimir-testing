@@ -124,7 +124,7 @@ function NavBar() {
       ) : (
         <>
           <button
-            className="w-full p-2 mt-auto leading-tight tracking-tight text-gray-900 bg-orange-200 border-2 border-orange-200 md:inline-block dark:bg-blue-500 dark:text-white dark:border-blue-500 dark:hover:border-blue-400 rounded-3xl hover:border-orange-100 shadow-custom"
+            className="logout-btn w-full p-2 mt-auto leading-tight tracking-tight text-gray-900 bg-orange-200 border-2 border-orange-200 md:inline-block dark:bg-blue-500 dark:text-white dark:border-blue-500 dark:hover:border-blue-400 rounded-3xl hover:border-orange-100 shadow-custom"
             onClick={handleLogout}
           >
             Logout
