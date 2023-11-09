@@ -1,10 +1,10 @@
-// signup.spec.js
 
-describe('Registration Process', () => {
-  it('registers a new user', () => {
+describe('Logs in', () => {
+  it('logs in the user', () => {
 
 
-    cy.visit('https://incredible-cassata-878ab6.netlify.app/register');
+    cy.visit('https://incredible-cassata-878ab6.netlify.app');
+    cy.contains('.login-btn').click();
 
     //
     cy.get('input[placeholder="Username"]').type('newuser');
