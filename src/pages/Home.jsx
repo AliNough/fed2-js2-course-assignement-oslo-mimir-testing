@@ -5,7 +5,6 @@ import PostPage from "../components/navbar/posts";
 import TrendingSection from "../components/navbar/trending";
 
 export default function HomePage() {
-
   return (
     <>
       <div className="container w-full mx-2 mt-2">
@@ -34,4 +33,3 @@ export default function HomePage() {
     </>
   );
 }
-
