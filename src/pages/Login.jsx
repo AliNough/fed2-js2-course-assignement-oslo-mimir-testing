@@ -116,7 +116,7 @@ export default function LoginPage() {
                     <button
                       disabled={isLoading}
                       type="submit"
-                      className="w-full px-4 py-2 my-2 leading-tight tracking-tight text-white bg-blue-500 border-2 border-blue-500 rounded-3xl hover:border-blue-400 shadow-custom"
+                      className=" login-btn w-full px-4 py-2 my-2 leading-tight tracking-tight text-white bg-blue-500 border-2 border-blue-500 rounded-3xl hover:border-blue-400 shadow-custom"
                     >
                       {isLoading ? "signing in" : "Login"}
                     </button>

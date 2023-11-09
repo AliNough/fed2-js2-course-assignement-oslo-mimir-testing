@@ -3,7 +3,7 @@ describe('Logs in', () => {
   it('logs in the user', () => {
 
 
-    cy.visit('https://incredible-cassata-878ab6.netlify.app');
+    cy.visit('localhost:5173');
     cy.contains('.login-btn').click();
 
     //
