@@ -18,7 +18,7 @@ export default function LoginPage() {
 
   const navigateToHome = () => {
     setTimeout(() => {
-      navigate({ to: "/" });
+      navigate({ to: "/Login" });
     }, 2000);
   };
 
