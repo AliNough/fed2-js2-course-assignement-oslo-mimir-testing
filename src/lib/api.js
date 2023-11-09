@@ -108,3 +108,8 @@ export async function fetchAllPosts() {
     throw new Error(error);
   }
 }
+
+export function logoutUser() {
+  localStorage.removeItem("jwt");
+  localStorage.removeItem("user_email");
+}
