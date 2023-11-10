@@ -1,5 +1,5 @@
-
 name: Vitest Unit Tests
+
 on:
   push:
     branches:
@@ -7,7 +7,6 @@ on:
   pull_request:
     branches:
       - workflow
-      
 
 jobs:
   build:
