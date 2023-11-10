@@ -2,6 +2,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12281634&assignment_repo_type=AssignmentRepo)
 # React + Vite
 ![GitHub Actions Workflow](https://github.com/AliNough/fed2-js2-course-assignement-oslo-mimir-testing/actions/workflows/e2e-testing.js.yml/badge.svg)
+![GitHub Actions Workflow](https://github.com/AliNough/fed2-js2-course-assignement-oslo-mimir-testing/actions/workflows/unit-testing.js.yaml/badge.svg)
 
 [REPORT]
 # Social Media Platform Front-End Client
