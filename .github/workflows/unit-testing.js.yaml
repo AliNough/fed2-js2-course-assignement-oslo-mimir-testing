@@ -41,9 +41,6 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
-      - name: Run Vite for testing
-        run: npm run dev
-      - name: Wait for Vite to start
-        run: npx wait-on http://localhost:5173
-      - name: Run Vitest
-        run: npm run test
+      - name: Execute Unit tests
+        run: npm run test:unit
+      
