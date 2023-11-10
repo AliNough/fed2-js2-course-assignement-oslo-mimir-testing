@@ -5,6 +5,8 @@
 [REPORT]
 # Social Media Platform Front-End Client
 
+![GitHub Classroom Workflow](https://github.com/AliNough/fed2-js2-course-assignement-oslo-mimir-testing/actions/workflows/classroom.yml/badge.svg)
+
 ## Overview
 This project involves the development of a React.js front-end client for an existing social media platform. The primary objectives were to create an attractive and responsive user interface, implement secure user authentication, and seamlessly integrate with the provided API.
 
