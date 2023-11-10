@@ -2,6 +2,8 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12281634&assignment_repo_type=AssignmentRepo)
 # React + Vite
 
+![GitHub Classroom Workflow](https://github.com/AliNough/fed2-js2-course-assignement-oslo-mimir-testing/actions/workflows/classroom.yml/badge.svg)
+
 [REPORT]
 # Social Media Platform Front-End Client
 
@@ -9,9 +11,9 @@
 This project involves the development of a React.js front-end client for an existing social media platform. The primary objectives were to create an attractive and responsive user interface, implement secure user authentication, and seamlessly integrate with the provided API.
 
 ## Team Members
+- Ada
+- Ali
 - Petter
-- Khadar
-- Christian
 
 ## Approach
 The project utilized React.js, emphasizing a modular and component-based architecture. JSON Web Tokens (JWT) were employed for secure user authentication, with LocalStorage ensuring persistent token storage for an enhanced user experience.
