@@ -1,0 +1,28 @@
+
+name: Vitest Unit Tests
+on:
+  push:
+    branches:
+      - workflow
+  pull_request:
+    branches:
+      - workflow
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Vite for testing
+        run: npm run dev
+      - name: Wait for Vite to start
+        run: npx wait-on http://localhost:5173
+      - name: Run Vitest
+        run: npm run test
