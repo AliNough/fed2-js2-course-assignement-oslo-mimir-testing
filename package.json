@@ -11,7 +11,8 @@
     "coverage": "vitest run --coverage",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:unit": "vitest"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
@@ -50,9 +51,5 @@
       "eslint --fix",
       "prettier --write"
     ]
-  },
-  "engines": {
-    "node": "^18.17.0 || >=20.5.0",
-    "npm": "9.2.0"
   }
 }
