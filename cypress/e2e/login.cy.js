@@ -1,5 +1,3 @@
-import { vi } from "vitest";
-
 describe("User Authentication", () => {
   describe("Login and Profile Access", () => {
     it("allows the user to log in and access their profile", () => {
