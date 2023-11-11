@@ -15,7 +15,8 @@ describe("User Authentication", () => {
   describe('Logout', () => {
     it('allows the user to log out', () => {
       // Assuming the user is logged in from the previous test
-      cy.visit('/Login');
+      cy.visit('/');
+      cy.get('.login-btn').click();
       cy.get('.logout-btn').click();
   
       // Check if localStorage is cleared
