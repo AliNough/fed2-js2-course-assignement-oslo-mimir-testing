@@ -1,7 +1,7 @@
 describe("User Authentication", () => {
   describe("Login and Profile Access", () => {
     it("allows the user to log in and access their profile", () => {
-      cy.visit("localhost:5173");
+      cy.visit("/");
 
       // Click login button without changing the default credentials
       cy.get(".login-btn").click();
@@ -15,7 +15,7 @@ describe("User Authentication", () => {
   describe('Logout', () => {
     it('allows the user to log out', () => {
       // Assuming the user is logged in from the previous test
-      cy.visit('localhost:5173/profile');
+      cy.visit('/profile');
       cy.get('.logout-btn').click();
   
       // Check if localStorage is cleared
@@ -32,7 +32,7 @@ describe("User Authentication", () => {
 
   describe("Invalid Login Attempt", () => {
     it("does not allow login with invalid credentials", () => {
-      cy.visit("localhost:5173");
+      cy.visit("/");
 
       // Clear default values and enter invalid credentials
       cy.get('input[placeholder="email"]')

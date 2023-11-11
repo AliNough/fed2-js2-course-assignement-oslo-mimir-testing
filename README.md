@@ -8,11 +8,6 @@
 
 # Update nov 23. Intergrated testing for SoMe Client
 
-## Team Member
-
--Ada Mathilde /@adakeita
--Petter /@Petter Marting
--Ali /@AliNough
 
 ## Update Overview
 We have integrated Cypress for end-to-end (E2E) testing and Vitest for unit testing into our SoMe Client project. This addition aims to enhance the reliability and robustness of our web application. Here are the key updates:
@@ -74,9 +69,9 @@ Solution: To overcome this, we modified our tests to simulate user interactions 
 This project involves the development of a React.js front-end client for an existing social media platform. The primary objectives were to create an attractive and responsive user interface, implement secure user authentication, and seamlessly integrate with the provided API.
 
 ## Team Members
-- Ada
-- Ali
-- Petter
+- Ada /@adakeita
+- Ali /@alienough
+- Petter /@PetterMartin
 
 ## Approach
 The project utilized React.js, emphasizing a modular and component-based architecture. JSON Web Tokens (JWT) were employed for secure user authentication, with LocalStorage ensuring persistent token storage for an enhanced user experience.
