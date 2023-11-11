@@ -3,6 +3,61 @@
 # React + Vite
 
 [REPORT]
+
+# Update nov 23. Intergrated testing for SoMe Client
+
+## Update Overview
+We have integrated Cypress for end-to-end (E2E) testing and Vitest for unit testing into our SoMe Client project. This addition aims to enhance the reliability and robustness of our web application. Here are the key updates:
+
+### Testing Integration
+E2E Testing with Cypress: We implemented tests focusing on user authentication, including:
+
+Logging in with valid credentials and accessing the profile page.
+Preventing login with invalid credentials and displaying error messages.
+Logging out functionality, including the clearing of storage tokens.
+Unit Testing with Vitest (if applicable): Describe what aspects of the application are covered by unit tests.
+
+### Functionality Tweaks
+We adjusted the navigation order within the application for a more intuitive user experience.
+Enhanced the logout button to include a clearing functionality, improving security and user experience.
+
+## Running the Tests
+E2E Tests with Cypress
+To run the end-to-end tests using Cypress, follow these steps:
+
+-Open your terminal or command prompt.
+-Navigate to the root directory of the SoMe Client project.
+-Run the following command to open the Cypress Test Runner:
+-npx cypress open
+
+Alternatively, if you prefer to run the tests in headless mode (without opening the Cypress GUI), use:
+
+npx cypress run
+
+The Cypress Test Runner window should open, displaying a list of test files.
+Click on the specific test file you wish to run, or run all tests to execute the entire suite.
+
+
+## Unit Tests with Vitest
+To run unit tests using Vitest, follow these instructions:
+
+-Open your terminal or command prompt.
+-Go to the root directory of the SoMe Client project.
+Execute the following command to run the Vitest tests:
+
+-npx vitest run
+
+This will execute all unit tests and display the results in the terminal.
+
+
+## Challenges and Solutions
+
+### Direct URL Navigation Issue
+During the development of our E2E tests, we encountered a challenge with direct URL navigation not working as expected in Cypress. This issue was particularly evident in tests that required navigating to specific pages after certain actions (like logging in).
+
+Solution: To overcome this, we modified our tests to simulate user interactions for navigation instead of directly accessing URLs. By using Cypress commands to click on navigation links and buttons, we were able to replicate the actual user flow more accurately. This approach not only resolved the navigation issue but also made our tests more robust and reflective of real user behavior.
+
+
 # Social Media Platform Front-End Client
 
 ![GitHub Classroom Workflow](https://github.com/AliNough/fed2-js2-course-assignement-oslo-mimir-testing/actions/workflows/classroom.yml/badge.svg)
