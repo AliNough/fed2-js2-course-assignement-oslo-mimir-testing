@@ -8,6 +8,12 @@
 
 # Update nov 23. Intergrated testing for SoMe Client
 
+## Team Member
+
+-Ada Mathilde /@adakeita
+-Petter /@Petter Marting
+-Ali /@AliNough
+
 ## Update Overview
 We have integrated Cypress for end-to-end (E2E) testing and Vitest for unit testing into our SoMe Client project. This addition aims to enhance the reliability and robustness of our web application. Here are the key updates:
 
@@ -58,6 +64,8 @@ This will execute all unit tests and display the results in the terminal.
 During the development of our E2E tests, we encountered a challenge with direct URL navigation not working as expected in Cypress. This issue was particularly evident in tests that required navigating to specific pages after certain actions (like logging in).
 
 Solution: To overcome this, we modified our tests to simulate user interactions for navigation instead of directly accessing URLs. By using Cypress commands to click on navigation links and buttons, we were able to replicate the actual user flow more accurately. This approach not only resolved the navigation issue but also made our tests more robust and reflective of real user behavior.
+
+//end
 
 
 # Social Media Platform Front-End Client
