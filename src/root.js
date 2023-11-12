@@ -9,7 +9,7 @@ import PostPage from "./pages/Post";
 import Root from "./App";
 
 
-// We changed the root route to be the login page, because we couldnt get the _redirects file to work
+// We changed the root route to be the login page, so users first encounter the loginform
 
 
 const rootRoute = new RootRoute({
