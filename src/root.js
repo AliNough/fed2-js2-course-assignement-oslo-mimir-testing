@@ -1,12 +1,16 @@
 import { Router, Route, RootRoute } from "@tanstack/react-router";
-import HomePage from "./pages/Home";
-import LoginPage from "./pages/Login";
+import LoginPage from "./pages/Home";
+import HomePage from "./pages/Login";
 import RegisterPage from "./pages/Register";
 import ProfilesPage from "./pages/Profiles";
 import ProfilePage from "./pages/Profile";
 import PostsPage from "./pages/Posts";
 import PostPage from "./pages/Post";
 import Root from "./App";
+
+
+// We changed the root route to be the login page, so users first encounter the loginform
+
 
 const rootRoute = new RootRoute({
   component: Root,

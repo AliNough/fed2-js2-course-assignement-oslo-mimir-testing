@@ -18,7 +18,7 @@ export default function LoginPage() {
 
   const navigateToHome = () => {
     setTimeout(() => {
-      navigate({ to: "/" });
+      navigate({ to: "/Login" });
     }, 2000);
   };
 
@@ -81,7 +81,7 @@ export default function LoginPage() {
                         name="email"
                         type="email"
                         required
-                        placeholder="Email"
+                        placeholder="email"
                         autoComplete="email"
                         defaultValue="Mirmir2023@stud.noroff.no"
                         className="bg-neutral-100 border-2 border-orange-100 text-gray-900 leading-tight tracking-tight sm:text-sm rounded-3xl focus:ring-primary-600 focus:border-primary-600 block w-full min-w-[220px] sm:min-w-[300px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -116,7 +116,7 @@ export default function LoginPage() {
                     <button
                       disabled={isLoading}
                       type="submit"
-                      className="w-full px-4 py-2 my-2 leading-tight tracking-tight text-white bg-blue-500 border-2 border-blue-500 rounded-3xl hover:border-blue-400 shadow-custom"
+                      className=" login-btn w-full px-4 py-2 my-2 leading-tight tracking-tight text-white bg-blue-500 border-2 border-blue-500 rounded-3xl hover:border-blue-400 shadow-custom"
                     >
                       {isLoading ? "signing in" : "Login"}
                     </button>
